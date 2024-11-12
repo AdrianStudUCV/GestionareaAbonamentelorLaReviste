@@ -1,0 +1,67 @@
+
+Documentație: Program de Gestionare a Abonamentelor la Reviste (Digitale și Fizice)
+ Problema Nr. 16
+
+ 1. Introducere
+
+Această aplicație are ca scop gestionarea abonamentelor pentru reviste, atât digitale cât și fizice. Utilizând principiile Programării Orientate pe Obiecte (OOP), vom defini clase pentru reviste, abonamente și clienți. Programul va permite utilizatorilor să se aboneze la reviste, să gestioneze detalii despre abonamente și să ofere funcționalități pentru diferite tipuri de reviste (digitale și fizice).
+
+2. Obiective
+
+- Implementarea unei aplicații care să gestioneze abonamente la reviste.
+- Diferențierea între abonamentele la reviste digitale și cele la reviste fizice.
+- Gestionarea informațiilor despre clienți și revizii.
+- Permitere modificări ale tipurilor de abonamente.
+- Urmărirea datelor de expirare a abonamentelor.
+- Administrator VS Client
+
+3. Arhitectura și Clasele Principale
+
+3.1 Clasa de bază: `Abonament`
+
+Această clasă va conține informațiile comune pentru toate tipurile de abonamente, cum ar fi clientul abonat, tipul revistei și durata abonamentului.
+
+3.2 Clase derivate: AbonamentFizic și AbonamentDigital
+
+Aceste clase moștenesc clasa de bază `Abonament` și adaugă detalii specifice fiecărui tip de abonament.
+
+
+
+Clasa `AbonamentFizic`
+
+Această clasă va gestiona informațiile pentru revistele fizice, cum ar fi adresa de livrare.
+
+ Clasa `AbonamentDigital`
+
+Această clasă va gestiona informațiile pentru revistele digitale, cum ar fi adresa de email și platforma pe care este accesată revista.
+
+3.3 Clasa Client
+
+Această clasă va reprezenta un client care poate avea mai multe abonamente (la reviste fizice sau digitale). Un client va avea un nume, o listă de abonamente și funcționalități pentru a adăuga sau elimina abonamente.
+
+3.4 Gestionarea abonamentelor
+
+Se va crea o clasă de gestionare a abonamentelor care va manipula lista tuturor abonamentelor disponibile. Aceasta poate fi implementată ca o funcție principală sau un modul separat care utilizează clasele definite mai sus.
+
+4. Funcționalități ale Aplicației
+
+4.1 Adăugarea unui Abonament
+- Clientul poate alege să adauge un abonament fizic sau digital.
+- Se vor introduce detalii precum numele clientului, tipul revistei, durata abonamentului, adresa de livrare sau email-ul clientului.
+
+4.2 Eliminarea unui Abonament
+- Utilizatorul poate alege să anuleze un abonament din lista curentă de abonamente ale clientului.
+
+
+4.3 Afișarea Abonamentelor
+- Toate abonamentele unui client pot fi afișate, fie că sunt digitale sau fizice, împreună cu detalii specifice fiecărui tip de abonament.
+
+5. Extensii și Îmbunătățiri Posibile
+- Gestionarea plăților: se poate adăuga o funcționalitate pentru a urmări plățile asociate fiecărui abonament.
+- Gestionarea datelor de expirare: implementarea unui sistem de notificare pentru expirarea abonamentelor.
+- Interfață grafică: se poate adăuga o interfață grafică pentru o experiență mai prietenoasă.
+- Stocare în fișiere: salvarea și încărcarea datelor de abonamente din fișiere pentru a permite persistența datelor între rulările programului.
+
+
+
+
