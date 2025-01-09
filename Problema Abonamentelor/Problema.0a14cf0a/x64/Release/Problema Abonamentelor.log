@@ -1,0 +1,211 @@
+﻿  Subscription.cpp
+  DigitalSubscription.cpp
+  PhysicalSubscription.cpp
+  Admin.cpp
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(11,19): error C2665: 'std::vector<Subscription *,std::allocator<Subscription *>>::push_back': no overloaded function could convert all the argument types
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(870,23):
+      could be 'void std::vector<Subscription *,std::allocator<Subscription *>>::push_back(_Ty &&)'
+          with
+          [
+              _Ty=Subscription *
+          ]
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(11,19):
+          'void std::vector<Subscription *,std::allocator<Subscription *>>::push_back(_Ty &&)': cannot convert argument 1 from 'const PhysicalSubscription' to '_Ty &&'
+          with
+          [
+              _Ty=Subscription *
+          ]
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(11,29):
+              Reason: cannot convert from 'const PhysicalSubscription' to '_Ty'
+          with
+          [
+              _Ty=Subscription *
+          ]
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(11,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(866,23):
+      or       'void std::vector<Subscription *,std::allocator<Subscription *>>::push_back(const _Ty &)'
+          with
+          [
+              _Ty=Subscription *
+          ]
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(11,19):
+          'void std::vector<Subscription *,std::allocator<Subscription *>>::push_back(const _Ty &)': cannot convert argument 1 from 'const PhysicalSubscription' to 'const _Ty &'
+          with
+          [
+              _Ty=Subscription *
+          ]
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(11,29):
+              Reason: cannot convert from 'const PhysicalSubscription' to 'const _Ty'
+          with
+          [
+              _Ty=Subscription *
+          ]
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(11,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      N:\VS-C++\Problema Abonamentelor\Admin.cpp(11,19):
+      while trying to match the argument list '(const PhysicalSubscription)'
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(15,19): error C2665: 'std::vector<Subscription *,std::allocator<Subscription *>>::push_back': no overloaded function could convert all the argument types
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(870,23):
+      could be 'void std::vector<Subscription *,std::allocator<Subscription *>>::push_back(_Ty &&)'
+          with
+          [
+              _Ty=Subscription *
+          ]
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(15,19):
+          'void std::vector<Subscription *,std::allocator<Subscription *>>::push_back(_Ty &&)': cannot convert argument 1 from 'const DigitalSubscription' to '_Ty &&'
+          with
+          [
+              _Ty=Subscription *
+          ]
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(15,29):
+              Reason: cannot convert from 'const DigitalSubscription' to '_Ty'
+          with
+          [
+              _Ty=Subscription *
+          ]
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(15,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(866,23):
+      or       'void std::vector<Subscription *,std::allocator<Subscription *>>::push_back(const _Ty &)'
+          with
+          [
+              _Ty=Subscription *
+          ]
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(15,19):
+          'void std::vector<Subscription *,std::allocator<Subscription *>>::push_back(const _Ty &)': cannot convert argument 1 from 'const DigitalSubscription' to 'const _Ty &'
+          with
+          [
+              _Ty=Subscription *
+          ]
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(15,29):
+              Reason: cannot convert from 'const DigitalSubscription' to 'const _Ty'
+          with
+          [
+              _Ty=Subscription *
+          ]
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(15,29):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      N:\VS-C++\Problema Abonamentelor\Admin.cpp(15,19):
+      while trying to match the argument list '(const DigitalSubscription)'
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(24,13): error C2511: 'void Admin::modifySubscription(int,const Subscription &)': overloaded member function not found in 'Admin'
+      N:\VS-C++\Problema Abonamentelor\Admin.h(9,7):
+      see declaration of 'Admin'
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(26,9): error C2597: illegal reference to non-static member 'Admin::subscriptions'
+      N:\VS-C++\Problema Abonamentelor\Admin.cpp(26,9):
+      see declaration of 'Admin::subscriptions'
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(26,9): error C3867: 'Admin::subscriptions': non-standard syntax; use '&' to create a pointer to member
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(26,9): error C2568: '[': unable to resolve function overload
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(36,13): error C2039: 'loadSubscriptionFromFile': is not a member of 'Admin'
+      N:\VS-C++\Problema Abonamentelor\Admin.h(9,7):
+      see declaration of 'Admin'
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(39,9): error C2065: 'subscriptions': undeclared identifier
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(44,13): error C2065: 'subscriptions': undeclared identifier
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(51,13): error C2511: 'void Admin::saveSubscriptionsToFile(const std::string &)': overloaded member function not found in 'Admin'
+      N:\VS-C++\Problema Abonamentelor\Admin.h(9,7):
+      see declaration of 'Admin'
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38): error C2597: illegal reference to non-static member 'Admin::subscriptions'
+      N:\VS-C++\Problema Abonamentelor\Admin.h(11,32):
+      see declaration of 'Admin::subscriptions'
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38): error C3535: cannot deduce type for 'auto &&' from 'unknown'
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38): error C2440: 'initializing': cannot convert from 'unknown' to 'int &&'
+      N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+      Reason: cannot convert from 'unknown' to 'int'
+      N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+      ill-formed reference to a non-static member
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38): error C2672: 'begin': no matching overloaded function found
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1962,27):
+      could be '_Ty *std::begin(_Ty (&)[_Size]) noexcept'
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+          '_Ty *std::begin(_Ty (&)[_Size]) noexcept': could not deduce template argument for '_Ty (&)[_Size]' from 'int'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1944,30):
+      or       'unknown-type std::begin(const _Container &) noexcept(<expr>)'
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+          Failed to specialize function template 'unknown-type std::begin(const _Container &) noexcept(<expr>)'
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+              With the following template arguments:
+                  N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+                  '_Container=int'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1945,23):
+              left of '.begin' must have class/struct/union
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1945,23):
+                  type is 'const _Container'
+          with
+          [
+              _Container=int
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1938,30):
+      or       'unknown-type std::begin(_Container &) noexcept(<expr>)'
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+          Failed to specialize function template 'unknown-type std::begin(_Container &) noexcept(<expr>)'
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+              With the following template arguments:
+                  N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+                  '_Container=int'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1939,23):
+              left of '.begin' must have class/struct/union
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1939,23):
+                  type is '_Container'
+          with
+          [
+              _Container=int
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\initializer_list(54,35):
+      or       'const _Elem *std::begin(std::initializer_list<_Elem>) noexcept'
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+          'const _Elem *std::begin(std::initializer_list<_Elem>) noexcept': could not deduce template argument for 'std::initializer_list<_Elem>' from 'int'
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38): error C2672: 'end': no matching overloaded function found
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1967,27):
+      could be '_Ty *std::end(_Ty (&)[_Size]) noexcept'
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+          '_Ty *std::end(_Ty (&)[_Size]) noexcept': could not deduce template argument for '_Ty (&)[_Size]' from 'int'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1956,30):
+      or       'unknown-type std::end(const _Container &) noexcept(<expr>)'
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+          Failed to specialize function template 'unknown-type std::end(const _Container &) noexcept(<expr>)'
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+              With the following template arguments:
+                  N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+                  '_Container=int'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1957,23):
+              left of '.end' must have class/struct/union
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1957,23):
+                  type is 'const _Container'
+          with
+          [
+              _Container=int
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1950,30):
+      or       'unknown-type std::end(_Container &) noexcept(<expr>)'
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+          Failed to specialize function template 'unknown-type std::end(_Container &) noexcept(<expr>)'
+              N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+              With the following template arguments:
+                  N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+                  '_Container=int'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1951,23):
+              left of '.end' must have class/struct/union
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility(1951,23):
+                  type is '_Container'
+          with
+          [
+              _Container=int
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\initializer_list(59,35):
+      or       'const _Elem *std::end(std::initializer_list<_Elem>) noexcept'
+          N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38):
+          'const _Elem *std::end(std::initializer_list<_Elem>) noexcept': could not deduce template argument for 'std::initializer_list<_Elem>' from 'int'
+  
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38): error C3536: '<begin>$L0': cannot be used before it is initialized
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,38): error C3536: '<end>$L0': cannot be used before it is initialized
+N:\VS-C++\Problema Abonamentelor\Admin.cpp(54,51): error C2100: you cannot dereference an operand of type 'int'
+  main.cpp
